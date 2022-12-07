@@ -35,5 +35,6 @@ app.post('/login', function (req, res){
 
 app.listen(3000);
 
+// antes de dar run, instalar esses dois codigos no terminal
 // npm install 'express'
 // npm install 'body-parser'
