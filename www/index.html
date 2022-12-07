@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(216, 145, 101), rgb(224, 116, 28));
+        }
+
+        .box{
+            color: white;
+            position: absolute;
+            width: 20%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0,0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        legend{
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .inputBox{
+            position: relative;
+        }
+
+        .inputBox input{
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 6px
+        }
+
+        #submit{
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            padding: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        a{
+            color: white;
+            text-align: center;
+            
+        }
+        
+        h1{
+            color: white;
+            font-style: italic;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           text-align: center;
+           font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PORTAL PUCJOGOS</h1>
+    <div class="box">
+        <form action="/login" method="post">
+            <fieldset>
+                
+                <legend>FAÇA SEU LOGIN</legend>
+                <br></br>
+
+                <div class="inputBox">
+                    <a> Endereço de email:</a>
+                    <input type="email" name="email" placeholder="Digite aqui" id="email" class="inputUser" required>
+                </div>
+                <br></br>
+                <div class="inputBox">
+                    <a>Senha de acesso:</a>
+                    <input type="password" name="password" placeholder="Digite aqui" id="password" class="inputUser" required>
+                </div>
+                <br></br>
+                <div>
+                <input type="submit" name="submit" id="submit" placeholder="oi">
+                <br></br>
+                <a href="cadastro.html"> Novo usuario? Cadastre-se aqui!</a>
+                </div>
+                
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
